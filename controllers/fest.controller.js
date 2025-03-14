@@ -32,7 +32,7 @@ exports.uploadFest = multer({
         }
         cb("Error: Images Only");
     }
-}).single("userImage");
+}).single("festImage");
 
 // เอาข้อมูลที่ส่งมาจาก FontedEnd เพิ่ม (Create/Insert) ลงใน DB
 exports.createFest = async (req, res) => {

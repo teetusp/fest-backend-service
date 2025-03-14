@@ -15,12 +15,12 @@ app.use(express.json())
 app.use('/user', userRoute)
 app.use('/fest', festRoute)
 
-//เอาไว้ test ว่ารับ request/response ได้หรือไม่
-// app.get('/', (request, response) => {
-//     response.json({
-//         message: "Hello, welcome to server...Teetus"
-//     })
-// })
+// เอาไว้ test ว่ารับ request/response ได้หรือไม่
+app.get('/', (request, response) => {
+    response.json({
+        message: "Hello, welcome to server...Teetus"
+    })
+})
 
 //สั่ง start ตัว web server โดยเปิด PORT รองรับการ request/response ตามที่กำหนดไว้
 app.listen(POST, () => {
